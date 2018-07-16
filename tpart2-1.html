@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
     maximum-scale=2.0">
     <link href="liststyle.css" rel="stylesheet">
-
+    <script>
+    var Original_URL ='https://hojinkang.github.io/panpan/tpart2-1.html';
+    var Replace_URL = 'https://panpanchinese.com';
+    var online = document.URL;
+    if(online.match(Original_URL)) document.location.href = online.replace(Original_URL, Replace_URL);
+    </script>
   </head>
 
 
