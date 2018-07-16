@@ -1,0 +1,152 @@
+
+
+body {
+
+
+font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+max-width: 800px;
+margin: 8 auto;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+ a {
+   text-decoration: none;
+   color: black;
+ }
+
+
+  table {
+    border-collapse: collapse;
+    width: 100%
+  }
+   th {
+    background: #ccc;
+    height: 30px;
+    text-align: left;
+
+
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+
+
+  }
+
+  td {
+    height: 25px;
+
+
+
+  }
+
+  span {
+
+   color: rgb(134, 70, 171)
+
+  }
+
+  tr:nth-child(even) {
+    background: #efefef;
+  }
+
+  tr:hover {
+    background: #d1d1d1;
+  }
+
+  .row1 {
+    text-align: center;
+      width: 20%
+
+  }
+  .row2 {
+    text-align: center;
+
+  }
+
+   .p1 {
+     padding : 3px 10px;
+   }
+
+
+
+   section {
+     margin-top: 10px;
+     margin-bottom: 30px;
+    }
+
+
+ @media screen and (min-width: 700px) {
+
+table {
+  font-size: 1.2em
+
+}
+
+
+tr {
+
+}
+
+
+
+   th {
+     background: #ccc;
+     height: 40px;
+     text-align: left;
+
+
+   }
+
+   td {
+     height: 35px;
+     text-align: left;
+
+
+   }
+
+   .row2 {
+     text-align: center;
+
+   }
+
+   .row1 {
+     text-align: center;
+       width: 20%
+
+   }
+
+   body {
+
+   }
+   p{
+    font-size: 1.3em;
+
+   }
+
+   li{
+    font-size: 1.3em;
+
+   }
+
+ }
+
+
+ @media screen and (max-width: 700px) {
+   body {
+
+   }
+   h1 {
+    font-size: 20px;
+
+   }
+   ul {
+    padding-left:20px;
+
+
+   }
+ }
