@@ -1,11 +1,22 @@
 <!doctype html>
-<html lang="zh">
+<html>
   <head>
     <title>第1课Part2交朋友(上)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
     maximum-scale=2.0">
     <link href="freetalk.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function (){
+    $("#click").click(function (){
+    $('html, body').animate({
+    scrollTop: $("body").offset().top
+    }, 500);
+    });
+    });
+    </script>
 
   </head>
   <body>
@@ -538,14 +549,15 @@
 
       </section>
 
+
+
+
+
+</body>
+<footer>
+
       <script>
-      $(document).ready(function (){
-      $("#click").click(function (){
-      $('html, body').animate({
-      scrollTop: $("body").offset().top
-      }, 500);
-      });
-      });
+
       </script>
 
       <style>
@@ -570,39 +582,10 @@
       }
       </style>
 
-      <script>
-  $(document).ready(function (){
-  $("#click").click(function (){
-  $('html, body').animate({
-  scrollTop: $("body").offset().top
-  }, 500);
-  });
-  });
-  </script>
+      <a href="javascript:;" class="scrollTopBtn" style="position:fixed; right:25px; bottom:25px; display:block; color:#ffffff; z-index:999" id="click">상단이동</a>
 
-  <style>
-  .scrollTopBtn {
-   display: none;
-   position: fixed;
-   bottom: 30px;
-   right: 20px;
-   z-index: 99;
-   border: 1px solid #0092cb;
-   outline: none;
-   background-color: #00a1e0;
-   font-size: 1em;
-   font-weight: bold;
-   cursor: pointer;
-   padding: 13px 17px;
-   border-radius: 4px;
-  }
-  .scrollTopBtn:hover {
-   border: 1px solid #303030;
-   background-color: #333333;
-  }
-  </style>
 
-  <a href="javascript:;" class="scrollTopBtn" style="position:fixed; right:25px; bottom:25px; display:block; color:#ffffff; z-index:999" id="click">상단이동</a>
 
-</body>
+</footer>
+
 </html>
