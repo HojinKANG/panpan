@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+  <link rel="stylesheet" href="swiper.min.css">
 
   <!-- Demo styles -->
   <style>
@@ -61,24 +59,14 @@
       <div class="swiper-slide">Slide 9</div>
       <div class="swiper-slide">Slide 10</div>
     </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
 
   <!-- Swiper JS -->
- 
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+  <script src="swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    var swiper = new Swiper('.swiper-container');
   </script>
 </body>
 </html>
