@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="../dist/css/swiper.min.css">
 
@@ -59,6 +61,9 @@
       <div class="swiper-slide">Slide 9</div>
       <div class="swiper-slide">Slide 10</div>
     </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 
   <!-- Swiper JS -->
@@ -66,7 +71,12 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container');
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 </body>
 </html>
